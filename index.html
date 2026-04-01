@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XORcel — XOR Obfuscation for CSV Files | Browser-Native, No Upload</title>
+    <meta name="description" content="XOR-obfuscate integer columns in CSV files directly in your browser. No upload, no server. Interactive bit-level visualisation included. Free. Client-side only." />
+    <meta name="theme-color" content="#110F1A" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://xorcel.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="XORcel — XOR Obfuscation for CSV Files" />
+    <meta property="og:description" content="XOR-obfuscate integer columns in CSV files directly in your browser. No upload, no server. Interactive bit-level visualisation included." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://xorcel.app/" />
+    <meta property="og:image" content="https://xorcel.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="XORcel — XOR Obfuscation for CSV Files" />
+    <meta property="og:site_name" content="XORcel" />
+
+    <!-- Twitter/X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="XORcel — XOR Obfuscation for CSV Files" />
+    <meta name="twitter:description" content="XOR-obfuscate integer columns in CSV files directly in your browser. No upload, no server." />
+    <meta name="twitter:image" content="https://xorcel.app/og-image.png" />
+    <meta name="twitter:image:alt" content="XORcel — XOR Obfuscation for CSV Files" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23110F1A'/><circle cx='8' cy='16' r='3' fill='%238B7EC8'/><text x='16' y='21' font-family='monospace' font-weight='700' font-size='14' fill='%238B7EC8' text-anchor='middle'>&#x2295;</text></svg>" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "XORcel",
+      "url": "https://xorcel.app/",
+      "description": "Browser-native tool for XOR-obfuscating integer columns in CSV files. Client-side only — no data leaves your browser.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "browserRequirements": "Requires a modern browser with JavaScript and WebAssembly support",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "XOR encoding of CSV integer columns",
+        "XOR decoding of CSV integer columns",
+        "Interactive bit-level XOR visualization",
+        "Client-side processing only — no data uploaded"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "polyym"
+      }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app"></div>
+    <noscript>
+      <div style="max-width:600px;margin:3rem auto;padding:2rem;font-family:sans-serif;color:#D8D2C4;background:#110F1A;">
+        <h1 style="font-size:1.5rem;margin-bottom:1rem;">XORcel — XOR Obfuscation for CSV Files</h1>
+        <p>XORcel is a free, browser-based tool for XOR-obfuscating integer columns in CSV files. All processing happens locally in your browser — no data is uploaded to any server.</p>
+        <p style="margin-top:1rem;">This application requires JavaScript to run. Please enable JavaScript in your browser settings to use XORcel.</p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
